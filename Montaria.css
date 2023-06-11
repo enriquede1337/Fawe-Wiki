@@ -16,6 +16,7 @@
 }
 
 :root {
+    --Vermelho:#7B1E21;
     --CorDeLetras:#E8D2A2;
     --CorDeLetrasFundo:#523d2c;
 }
@@ -42,16 +43,11 @@ header {
     background-position: center, center;
     background-size: cover
 }
-header > h1 {
-    font-family:'Letras', ari;
-    color: var(--);
-}
-
 /*Para cima é cabeçalho para baixo Navegação*/
 
 #barra{
     display: flex;
-    justify-content: space-around;
+    justify-content: first baseline;
     align-items: center;
     height: 8vh;
     background-color: var(--CorDeLetrasFundo);
@@ -63,36 +59,6 @@ nav > a > p {
 }
 
 /*Para cima é Navegação para baixo Main*/
-
-main{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly
-}
-.conteudo{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100vw;
-    height: 28vh;
-}
-.Caixa {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around;
-    align-items: center;
-    color: var(--CorDeLetrasFundo);
-    width: 8vw;
-    height: 20vh;
-    border: solid 2px black;
-}
-a:hover{
-    background-color: red;
-}
-
-/*Para cima é Main para baixo Footer*/
 
 footer{
     display: flex;
@@ -112,6 +78,8 @@ footer{
 #Redes-Sociais > a > img {
     height: 9vh;
 }
+
+
 
 /*-----------------------------------------*/
 /*PRA BAIXO É MEDIA QUERIES*/

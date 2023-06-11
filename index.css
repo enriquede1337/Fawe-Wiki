@@ -1,0 +1,212 @@
+@charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:'Titulo';
+    src: url(fonts/fawefont.ttf);
+}
+
+@font-face {
+    font-family:'Letras';
+    src: url(fonts/artifexcf.ttf);
+}
+
+:root {
+    --Vermelho:#7B1E21;
+    --CorDeLetras:#E8D2A2;
+    --CorDeLetrasFundo:#523d2c;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(Imagens/textura1.png);
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Para cima é INFORMAÇÕES GERAIS para baixo CABEÇALHO*/
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34vh;
+    background-image: url(Imagens/foto\ com\ texto.png);
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover
+}
+/*Para cima é CABEÇALHO para baixo NAVEGAÇÃO*/
+
+#barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    background-color: var(--CorDeLetrasFundo);
+    font-family:'Letras';
+}
+
+nav > a > p {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    color: var(--CorDeLetras);
+}
+
+nav > a:hover{
+    box-shadow: 2px 2px 8px black;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+/*Para cima é NAVEGAÇÃO para baixo MAIN*/
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly
+}
+.conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 28vh;
+}
+.Caixa {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--CorDeLetrasFundo);
+    width: 8vw;
+    height: 20vh;
+    border: solid 2px black;
+}
+main > section > a:hover{
+    background-color: var(--Vermelho);
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+/*Para cima é Main para baixo Footer*/
+
+footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--CorDeLetrasFundo);
+}
+#Direitos-Autorais{
+    background-color: green;
+    font-family: var(--FonteTitulo);
+    font-size: 2vh;
+    display: flex;
+    text-align: center;
+}
+#Redes-Sociais{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+#Redes-Sociais > #bb{
+    text-align: end;
+    background-color: purple;
+    width: 38.5vw;
+    height: 7.1vh;
+
+}
+#Redes-Sociais > #bb > a > img {
+    background-color: red;
+    height: 7vh;
+}
+
+/*-----------------------------------------*/
+/*PRA BAIXO É MEDIA QUERIES*/
+/*-----------------------------------------*/
+
+@media(max-width: 450px){
+    h1 {
+        color: blue;
+    }
+
+
+    header {
+        height: 5vh;
+    }
+    
+    /*Para cima é cabeçalho para baixo Navegação*/
+    
+    nav{
+        height: 1.8vh;
+    }
+    nav > a > .link{
+        font-size: 1.7vh;
+    }
+    
+    /*Para cima é Navegação para baixo Main*/
+    
+    main{
+        height: 100vh;
+    }
+
+    main{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly
+    }
+
+    .conteudo{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+        height: 20vh;
+        background-color: rgba(59, 17, 17, 0.62);
+    }
+    .Caixa {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        color: blue;
+        font-size: 1.5vh;
+        width: 15vw;
+        height: 9vh;
+        background-color: rgba(7, 44, 7, 0.465);
+    }
+    .Caixa > img {
+        height: 100%;
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 8vh;
+        background-color: var(--CorDeLetrasFundo);
+    }
+    #Direitos-Autorais{
+        font-family: var(--FonteTitulo);
+        font-size: 1.5vh;
+        display: flex;
+        text-align: center;
+        justify-items: center;
+    }
+    #Redes-Sociais > img {
+        height: 7vh;
+    }
+}
