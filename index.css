@@ -63,24 +63,31 @@ nav > a > p {
 nav > a:hover{
     box-shadow: 2px 2px 8px black;
     transition-property: background-color;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
 /*Para cima é NAVEGAÇÃO para baixo MAIN*/
 
 main{
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+}
+main > #Sugestão > h1 {
+    width: 88vw;
 }
 .conteudo{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100vw;
     height: 28vh;
+}
+.conteudo > .Alinhamento {
+    margin-right: 30px;
 }
 .Caixa {
     display: flex;
@@ -108,26 +115,27 @@ footer{
     background-color: var(--CorDeLetrasFundo);
 }
 #Direitos-Autorais{
-    background-color: green;
     font-family: var(--FonteTitulo);
     font-size: 2vh;
     display: flex;
-    text-align: center;
+    justify-content: end
+}
+#Direitos-Autorais > p {
+    width: 25.6vw;
 }
 #Redes-Sociais{
     display: flex;
     justify-content: center;
-    background-color: blue;
+
 }
 #Redes-Sociais > #bb{
-    text-align: end;
-    background-color: purple;
-    width: 38.5vw;
+    text-align: start;
+
+    width: 17vw;
     height: 7.1vh;
 
 }
 #Redes-Sociais > #bb > a > img {
-    background-color: red;
     height: 7vh;
 }
 
