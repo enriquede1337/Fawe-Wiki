@@ -77,14 +77,14 @@ main{
     justify-content: space-evenly;
 }
 main > #Sugestão > h1 {
-    width: 88vw;
+    width: 51.5vw;
 }
 .conteudo{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 28vh;
+    height: 24vh;
 }
 .conteudo > .Alinhamento {
     margin-right: 30px;
@@ -99,7 +99,7 @@ main > #Sugestão > h1 {
     height: 20vh;
     border: solid 2px black;
 }
-main > section > a:hover{
+.Caixa:hover{
     background-color: var(--Vermelho);
     transition-property: background-color;
     transition-duration: 1s;
