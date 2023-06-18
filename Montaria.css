@@ -31,7 +31,7 @@ a{
     text-decoration: none;
 }
 
-/*Para cima é Informações gerais para baixo Cabeçalho*/
+/*Para cima é INFORMAÇÕES GERAIS para baixo CABEÇALHO*/
 
 header {
     display: flex;
@@ -43,11 +43,11 @@ header {
     background-position: center, center;
     background-size: cover
 }
-/*Para cima é cabeçalho para baixo Navegação*/
+/*Para cima é CABEÇALHO para baixo NAVEGAÇÃO*/
 
 #barra{
     display: flex;
-    justify-content: first baseline;
+    justify-content: center;
     align-items: center;
     height: 8vh;
     background-color: var(--CorDeLetrasFundo);
@@ -55,14 +55,60 @@ header {
 }
 
 nav > a > p {
+    margin-left: 1vw;
+    margin-right: 1vw;
     color: var(--CorDeLetras);
 }
 
-/*Para cima é Navegação para baixo Main*/
+nav > a:hover{
+    box-shadow: 2px 2px 8px black;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+/*Para cima é NAVEGAÇÃO para baixo MAIN*/
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+main > #Sugestão > h1 {
+    width: 51.5vw;
+}
+.conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 24vh;
+}
+.conteudo > .Alinhamento {
+    margin-right: 30px;
+}
+.Caixa {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--CorDeLetrasFundo);
+    width: 8vw;
+    height: 20vh;
+    border: solid 2px black;
+}
+.Caixa:hover{
+    background-color: var(--Vermelho);
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+/*Para cima é Main para baixo Footer*/
 
 footer{
     display: flex;
-    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 10vh;
@@ -72,14 +118,26 @@ footer{
     font-family: var(--FonteTitulo);
     font-size: 2vh;
     display: flex;
-    text-align: center;
-    justify-items: center;
+    justify-content: end
 }
-#Redes-Sociais > a > img {
-    height: 9vh;
+#Direitos-Autorais > p {
+    width: 25.6vw;
 }
+#Redes-Sociais{
+    display: flex;
+    justify-content: center;
 
+}
+#Redes-Sociais > #bb{
+    text-align: start;
 
+    width: 17vw;
+    height: 7.1vh;
+
+}
+#Redes-Sociais > #bb > a > img {
+    height: 7vh;
+}
 
 /*-----------------------------------------*/
 /*PRA BAIXO É MEDIA QUERIES*/
