@@ -1,0 +1,243 @@
+@charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:'Titulo';
+    src: url(fonts/fawefont.ttf);
+}
+
+@font-face {
+    font-family:'Letras';
+    src: url(fonts/artifexcf.ttf);
+}
+
+:root {
+    --Vermelho:#7B1E21;
+    --CorDeLetras:#E8D2A2;
+    --CorDeLetrasFundo:#523d2c;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(Imagens/textura1.png);
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Para cima é INFORMAÇÕES GERAIS para baixo CABEÇALHO*/
+
+header {
+    background-color: red;
+    height: 34vh;
+    background-image: url(Imagens/fawe-bg\ cortado.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Para cima é CABEÇALHO para baixo NAVEGAÇÃO*/
+
+#barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: var(--CorDeLetrasFundo);
+    font-family:'Titulo';
+}
+
+nav > a > p {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    color: var(--CorDeLetras);
+}
+
+nav > a:hover{
+    box-shadow: 2px 2px 8px black;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+/*Para cima é NAVEGAÇÃO para baixo MAIN*/
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+main > #Sugestão > h1 {
+    width: 43.5vw;
+}
+.conteudo{
+    display: flex;
+    justify-content: center;
+    margin-top: -4.2vh;
+    width: 100vw;
+    height: 20vh;
+}
+.conteudo > .Alinhamento {
+    margin-right: 1.2vh;
+}
+.Caixa {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--CorDeLetrasFundo);
+    width: 8vw;
+    height: 20vh;
+    border: solid 2px black;
+}
+.Caixa:hover{
+    background-color: var(--Vermelho);
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+/*Para cima é Main para baixo Footer*/
+
+footer{
+    width: 100%;
+}
+footer > #rodapé-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--CorDeLetrasFundo);
+    font-family:'Titulo';
+    height: 50px;
+}
+footer > #rodapé-links > a{
+    color: var(--CorDeLetras);
+    padding: 10px;
+}
+#bla-bla{
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url(Imagens/textura1.png);
+    color: var(--CorDeLetrasFundo)
+}
+/*-----------------------------------------*/
+/*PRA BAIXO É MEDIA QUERIES*/
+/*-----------------------------------------*/
+
+/*
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-image: url(Imagens/foto\ com\ texto.png);
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover
+}
+/*Para cima é CABEÇALHO para baixo NAVEGAÇÃO
+
+#barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background-color: var(--CorDeLetrasFundo);
+    font-family:'Letras';
+}
+
+nav > a > p {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    color: var(--CorDeLetras);
+}
+
+nav > a:hover{
+    box-shadow: 2px 2px 8px black;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+/*Para cima é NAVEGAÇÃO para baixo MAIN
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+main > #Sugestão > h1 {
+    width: 51.5vw;
+}
+.conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 24vh;
+}
+.conteudo > .Alinhamento {
+    margin-right: 30px;
+}
+.Caixa {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--CorDeLetrasFundo);
+    width: 8vw;
+    height: 20vh;
+    border: solid 2px black;
+}
+.Caixa:hover{
+    background-color: var(--Vermelho);
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+/*Para cima é Main para baixo Footer
+
+footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--CorDeLetrasFundo);
+}
+#Direitos-Autorais{
+    font-family: var(--FonteTitulo);
+    font-size: 2vh;
+    display: flex;
+    justify-content: end
+}
+#Direitos-Autorais > p {
+    width: 25.6vw;
+}
+#Redes-Sociais{
+    display: flex;
+    justify-content: center;
+
+}
+#Redes-Sociais > #bb{
+    text-align: start;
+
+    width: 17vw;
+    height: 7.1vh;
+
+}
+#Redes-Sociais > #bb > a > img {
+    height: 7vh;
+}
+*/
